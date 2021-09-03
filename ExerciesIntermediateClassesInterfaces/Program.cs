@@ -1,12 +1,14 @@
-﻿using System;
-
+﻿
 namespace ExerciesIntermediateClassesInterfaces
 {
     public class Program
     {
+        
         public static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            var runner = new Runner();
+            runner.RunMethodOverriding();
+
         }
     }
 }
