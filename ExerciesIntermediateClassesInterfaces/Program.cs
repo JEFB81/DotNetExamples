@@ -7,7 +7,7 @@ namespace ExerciesIntermediateClassesInterfaces
         public static void Main(string[] args)
         {
             var runner = new Runner();
-            runner.RunMethodOverriding();
+            runner.Polimorphism();
 
         }
     }
