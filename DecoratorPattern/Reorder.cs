@@ -8,7 +8,7 @@ namespace DecoratorPattern
     /// </summary>
     public class Reorder : Decorator
     {
-        protected readonly List<string> orders = new List<string>();
+        protected readonly List<string> orders = new();
 
         // Constructor
         public Reorder(LibraryItem libraryItem)
@@ -23,6 +23,7 @@ namespace DecoratorPattern
         public override void Display()
         {
             base.Display();
+            Console.WriteLine("\nReorder ------ ");
 
             foreach (string item in orders)
             {

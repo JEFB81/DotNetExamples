@@ -25,7 +25,7 @@ namespace DecoratorPattern
             borrowBook.BorrowItem("Customer #3");
             borrowBook.Display();
             
-            // Maak video reorder, the Order and Display
+            // Maak video reorder, then order item and Display
             var reorderVideo = new Reorder(video);
             reorderVideo.OrderItem("Jaws");
             reorderVideo.Display();
