@@ -5,7 +5,9 @@ VisualStudioVersion = 16.0.31515.178
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ExerciesIntermediateClassesInterfaces", "ExerciesIntermediateClassesInterfaces\ExerciesIntermediateClassesInterfaces.csproj", "{A7600E93-6BDB-4CC1-AC91-D9AEBFC0EDCF}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ExerciesIntermediateClasses", "ExerciesIntermediateClasses\ExerciesIntermediateClasses.csproj", "{E884508E-457C-4C19-8AE2-E6BE37486479}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ExerciesIntermediateClasses", "ExerciesIntermediateClasses\ExerciesIntermediateClasses.csproj", "{E884508E-457C-4C19-8AE2-E6BE37486479}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DecoratorPattern", "DecoratorPattern\DecoratorPattern.csproj", "{F2E95FA3-99A9-4DFE-A25A-EC3BFA8B6CEC}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,6 +23,10 @@ Global
 		{E884508E-457C-4C19-8AE2-E6BE37486479}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{E884508E-457C-4C19-8AE2-E6BE37486479}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{E884508E-457C-4C19-8AE2-E6BE37486479}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F2E95FA3-99A9-4DFE-A25A-EC3BFA8B6CEC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F2E95FA3-99A9-4DFE-A25A-EC3BFA8B6CEC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F2E95FA3-99A9-4DFE-A25A-EC3BFA8B6CEC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F2E95FA3-99A9-4DFE-A25A-EC3BFA8B6CEC}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
