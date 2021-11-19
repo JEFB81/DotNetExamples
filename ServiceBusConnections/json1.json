@@ -1,7 +1,13 @@
-# used for getting connection string namespace and access key
-  az servicebus queue show \
-    --resource-group learn-a5e5b166-0b32-43a3-a148-e53ad4ba4ec5 \
-    --name salesmessages \
-    --query messageCount \
-    --namespace-name <namespace-name>
 
+  
+  
+## used to check amount of messages are in the queue
+  az servicebus queue show \ --resource-group learn-a5e5b166-0b32-43a3-a148-e53ad4ba4ec5 \ --name salesmessages \ --query messageCount \ --namespace-name <namespace-name>
+
+## used for getting connection string namespace and access key
+az servicebus namespace authorization-rule keys list \
+    --resource-group learn-a5e5b166-0b32-43a3-a148-e53ad4ba4ec5 \
+    --name RootManageSharedAccessKey \
+    --query primaryConnectionString \
+    --output tsv \
+    --namespace-name <namespace-name>
