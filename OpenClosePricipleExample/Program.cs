@@ -18,7 +18,8 @@ namespace OpenClosePricipleExample
                 new MargaritaPizza(),
                 new Tuna()
             };
-            var pizzaMaker = new MultipleMakers(pizzas);
+            var pizzaMaker = new MultipleMakers();
+            pizzaMaker.SetPizzaOrder(pizzas);
             pizzaMaker.MakePizzaOrder();
 
             Console.ReadLine();

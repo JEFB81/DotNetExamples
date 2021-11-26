@@ -26,13 +26,17 @@ namespace OpenClosePricipleExample
     // class can make multiple pizza at a time
     public class MultipleMakers 
     {
-        private readonly IEnumerable<Pizza> _pizzas;
+        private IEnumerable<Pizza> _pizzas;
         private Oven _pizzaOven;
 
-        public MultipleMakers(IEnumerable<Pizza> pizzas)
+        public MultipleMakers()
+        {
+            _pizzaOven = new Oven();
+        }
+
+        public void SetPizzaOrder(IEnumerable<Pizza> pizzas)
         {
             _pizzas = pizzas;
-            _pizzaOven = new Oven();
         }
 
         public void MakePizzaOrder()
