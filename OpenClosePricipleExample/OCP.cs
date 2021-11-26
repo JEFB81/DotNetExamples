@@ -59,29 +59,36 @@ namespace OpenClosePricipleExample
 
         public Pizza(Type pizzaType)
         {
-            _pizzaType = pizzaType;          
+            _pizzaType = pizzaType;
+            _ingredients = new Ingredients();
         }
 
         protected virtual void SetIngredients() 
         {            
             Console.WriteLine("Set Base Pizza Ingratients");
+            _ingredients.BasicIngredients();
         }
 
         public void Make(Oven oven) 
         {
-            oven.Bake(_ingredients);
+            oven.Bake(_pizzaType);
         }
     }
 
     public class Ingredients
     {
+        public void BasicIngredients() 
+        {
+            Console.WriteLine("Tomate sauce.");
+            Console.WriteLine("Parmesano cheese.");
+        }
     }
 
     public class Oven
     {
-        public void Bake(Ingredients ingredients)
+        public void Bake(Type type)
         {
-            Console.WriteLine("Baking a Pizza for 10 minutes");
+            Console.WriteLine($"Baking {type} Pizza for 10 minutes");
         }
     }
 
