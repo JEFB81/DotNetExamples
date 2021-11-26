@@ -9,9 +9,11 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ExerciesIntermediateClasses
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DecoratorPattern", "DecoratorPattern\DecoratorPattern.csproj", "{F2E95FA3-99A9-4DFE-A25A-EC3BFA8B6CEC}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CompositePattern", "CompositePattern\CompositePattern.csproj", "{D5C8A3E9-D45A-4A72-9AED-9CE8223C3A42}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CompositePattern", "CompositePattern\CompositePattern.csproj", "{D5C8A3E9-D45A-4A72-9AED-9CE8223C3A42}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ServiceBusConnections", "ServiceBusConnections\ServiceBusConnections.csproj", "{8DF4CBA8-D1B3-4C42-B1EB-45A093CEBD16}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ServiceBusConnections", "ServiceBusConnections\ServiceBusConnections.csproj", "{8DF4CBA8-D1B3-4C42-B1EB-45A093CEBD16}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "QueueMessages", "QueueMessages\QueueMessages.csproj", "{1120DC15-3A05-4A1E-9C09-66F85E3CB046}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -39,6 +41,10 @@ Global
 		{8DF4CBA8-D1B3-4C42-B1EB-45A093CEBD16}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{8DF4CBA8-D1B3-4C42-B1EB-45A093CEBD16}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{8DF4CBA8-D1B3-4C42-B1EB-45A093CEBD16}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1120DC15-3A05-4A1E-9C09-66F85E3CB046}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1120DC15-3A05-4A1E-9C09-66F85E3CB046}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1120DC15-3A05-4A1E-9C09-66F85E3CB046}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1120DC15-3A05-4A1E-9C09-66F85E3CB046}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
