@@ -33,6 +33,5 @@ namespace DecoratorPattern.Example
             // Wait for user
             Console.ReadKey();
         }
-
     }
 }
