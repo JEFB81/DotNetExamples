@@ -13,9 +13,11 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CompositePattern", "Composi
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ServiceBusConnections", "ServiceBusConnections\ServiceBusConnections.csproj", "{8DF4CBA8-D1B3-4C42-B1EB-45A093CEBD16}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "QueueMessages", "QueueMessages\QueueMessages.csproj", "{1120DC15-3A05-4A1E-9C09-66F85E3CB046}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "QueueMessages", "QueueMessages\QueueMessages.csproj", "{1120DC15-3A05-4A1E-9C09-66F85E3CB046}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OpenClosePricipleExample", "OpenClosePricipleExample\OpenClosePricipleExample.csproj", "{43B4DC7D-B3F2-4606-8B54-6EBF4620F6FC}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "OpenClosePricipleExample", "OpenClosePricipleExample\OpenClosePricipleExample.csproj", "{43B4DC7D-B3F2-4606-8B54-6EBF4620F6FC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PollyExample", "PollyExample\PollyExample.csproj", "{6D5DED82-F58D-43F1-B5B9-EAF1AE3E3DCB}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -51,6 +53,10 @@ Global
 		{43B4DC7D-B3F2-4606-8B54-6EBF4620F6FC}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{43B4DC7D-B3F2-4606-8B54-6EBF4620F6FC}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{43B4DC7D-B3F2-4606-8B54-6EBF4620F6FC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6D5DED82-F58D-43F1-B5B9-EAF1AE3E3DCB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6D5DED82-F58D-43F1-B5B9-EAF1AE3E3DCB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6D5DED82-F58D-43F1-B5B9-EAF1AE3E3DCB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6D5DED82-F58D-43F1-B5B9-EAF1AE3E3DCB}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
