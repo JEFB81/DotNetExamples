@@ -14,6 +14,7 @@ namespace PollyExample.Controllers
         }
 
         [HttpGet]
+        [Route("/Get")]
         public ActionResult<UserInfo> Get(string AccountInfo)
         {
             if (string.IsNullOrEmpty(AccountInfo)) 
@@ -23,6 +24,15 @@ namespace PollyExample.Controllers
 
             var result = _gitHubSearchAccountPublicInfo.LoadAccount(AccountInfo).GetAwaiter().GetResult();
 
+            return Ok(result);
+        }
+
+
+        [HttpGet]
+        [Route("/GetWithRetry")]
+        public ActionResult<UserInfo> GetWithRetry(string AccountInfo)
+        {
+            var result = _gitHubSearchAccountPublicInfo.LoadAccountWithRetry(AccountInfo).GetAwaiter().GetResult();
             return Ok(result);
         }
     }

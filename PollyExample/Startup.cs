@@ -5,6 +5,7 @@ using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Microsoft.Net.Http.Headers;
 using Microsoft.OpenApi.Models;
+using Polly;
 using System;
 
 namespace PollyExample
@@ -22,9 +23,6 @@ namespace PollyExample
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddControllers();
-               // .AddJsonOptions(x => x.JsonSerializerOptions.ReferenceHandler = System.Text.Json.Serialization.ReferenceHandler.Preserve);
-
-
             services.AddSwaggerGen(c =>
             {
                 c.SwaggerDoc("v1", new OpenApiInfo { Title = "PollyExample", Version = "v1" });
@@ -36,7 +34,9 @@ namespace PollyExample
                 httpClient.BaseAddress = new Uri("https://api.github.com/"); 
                 httpClient.DefaultRequestHeaders.Add(HeaderNames.Accept, "application/vnd.github.v3+json"); 
                 httpClient.DefaultRequestHeaders.Add(HeaderNames.UserAgent, "HttpClientFactoryExample");
-            });
+            })
+                // using polly retry max 3 times with a pauze of 300 milliseconds between each retry
+                .AddTransientHttpErrorPolicy(x => x.WaitAndRetryAsync(3, _ => TimeSpan.FromMilliseconds(300)));
 
             // Service injection
             services.AddScoped<IGitHubSearchAccountPublicInfo, GitHubSearchAccountPublicInfo>();
